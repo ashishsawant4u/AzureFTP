@@ -20,7 +20,7 @@ public class AzureConfigurations
 	public BlobServiceClient blobServiceClientSAS() 
 	{
 		
-		System.out.println("COONECTING ==> "+azureDataloadConfig.getEndpointUrl());
+		System.out.println("CONNECTING ==> "+azureDataloadConfig.getEndpointUrl());
 		
 	    BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
 	            .endpoint(azureDataloadConfig.getEndpointUrl())

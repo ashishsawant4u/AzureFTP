@@ -48,14 +48,14 @@
 		    <groupId>com.azure</groupId>
 		    <artifactId>azure-storage-blob</artifactId>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 		      <groupId>com.azure</groupId>
 		      <artifactId>azure-storage-common</artifactId>
-		    </dependency>
-		<dependency>
+		 </dependency>-->
+		<!--<dependency>
 		    <groupId>com.azure</groupId>
 		    <artifactId>azure-identity</artifactId>
-		</dependency>
+		</dependency>-->
 		<dependency>
 		    <groupId>commons-io</groupId>
 		    <artifactId>commons-io</artifactId>

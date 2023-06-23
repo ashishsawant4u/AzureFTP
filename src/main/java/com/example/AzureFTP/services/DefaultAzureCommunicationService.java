@@ -1,6 +1,5 @@
 package com.example.AzureFTP.services;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,7 +58,7 @@ public class DefaultAzureCommunicationService implements RexelDataloadService
 	@Override
 	public List<String> getFiles(String remoteSourceDirectory, String localDestinationDirectory,List<String> filenames) 
 	{
-		List<String> downloadedFileNames = new ArrayList();
+		List<String> downloadedFileNames = new ArrayList<>();
 		
 		try
 		{
@@ -99,7 +98,7 @@ public class DefaultAzureCommunicationService implements RexelDataloadService
 	@Override
 	public List<String> getFilesRegularExpression(String remoteSourceDirectory, String localDestinationDirectory,String regularExpression) 
 	{
-		List<String> downloadedFileNames = new ArrayList();
+		List<String> downloadedFileNames = new ArrayList<>();
 		
 		final String newRegularExpression = regularExpression == null ? "*" : regularExpression;
 		
@@ -138,7 +137,7 @@ public class DefaultAzureCommunicationService implements RexelDataloadService
 	public List<String> getDirectory(String remoteSourceDirectory, String localDestinationDirectory,
 			String excludeRegularExpression) 
 	{
-		List<String> downloadedFileNames = new ArrayList();
+		List<String> downloadedFileNames = new ArrayList<>();
 		
 		try
 		{
@@ -174,7 +173,7 @@ public class DefaultAzureCommunicationService implements RexelDataloadService
 	@Override
 	public List<String> getFilesList(String remoteSourceDirectory, String regularExpression) 
 	{
-		List<String> fileNamesAtRemoteLocation = new ArrayList();
+		List<String> fileNamesAtRemoteLocation = new ArrayList<>();
 		
 		final String newRegularExpression = regularExpression == null ? "*" : regularExpression;
 		
@@ -208,7 +207,7 @@ public class DefaultAzureCommunicationService implements RexelDataloadService
 	@Override
 	public List<String> getSubDirectoriesList(String remoteSourceDirectory) 
 	{
-		List<String> fileNamesAtRemoteLocation = new ArrayList();
+		List<String> fileNamesAtRemoteLocation = new ArrayList<>();
 		
 		try
 		{
@@ -266,7 +265,7 @@ public class DefaultAzureCommunicationService implements RexelDataloadService
 	public List<String> moveFiles(String remoteSourceDirectory, String remoteDestinationDirectory,
 			List<String> filenames, String filenameSuffix) 
 	{
-		List<String> movedFilesName = new ArrayList();
+		List<String> movedFilesName = new ArrayList<>();
 		
 		try
 		{
@@ -318,7 +317,7 @@ public class DefaultAzureCommunicationService implements RexelDataloadService
 	public List<String> sendFiles(String localSourceDirectory, String remoteDestinationDirectory,
 			List<String> filenames, String filenameSuffix) 
 	{
-		List<String> uploadedFilesName = new ArrayList();
+		List<String> uploadedFilesName = new ArrayList<>();
 		
 		try
 		{
